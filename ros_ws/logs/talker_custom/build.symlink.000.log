@@ -1,0 +1,3 @@
+Symlinking /home/alynada/ros_ws/devel/lib/pkgconfig/talker_custom.pc
+Symlinking /home/alynada/ros_ws/devel/share/talker_custom/cmake/talker_customConfig-version.cmake
+Symlinking /home/alynada/ros_ws/devel/share/talker_custom/cmake/talker_customConfig.cmake
