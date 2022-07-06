@@ -1,0 +1,7 @@
+Symlinking /home/alynada/ros_ws/devel/lib/pkgconfig/rqt_joint_trajectory_plot.pc
+Symlinking /home/alynada/ros_ws/devel/lib/python3/dist-packages/rqt_joint_trajectory_plot/__init__.py
+Symlinking /home/alynada/ros_ws/devel/share/rqt_joint_trajectory_plot/cmake/rqt_joint_trajectory_plotConfig-version.cmake
+Symlinking /home/alynada/ros_ws/devel/share/rqt_joint_trajectory_plot/cmake/rqt_joint_trajectory_plotConfig.cmake
+Symlinking /home/alynada/ros_ws/devel/bin/joint_trajectory_generator.py
+Symlinking /home/alynada/ros_ws/devel/bin/cmake.lock
+Symlinking /home/alynada/ros_ws/devel/bin/rqt_joint_trajectory_plot
