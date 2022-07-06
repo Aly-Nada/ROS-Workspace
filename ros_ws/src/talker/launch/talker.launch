@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Launching nodes -->
+    <node name="publisher" pkg="talker" type="publisher.py" output="screen"/>
+    <node name="subscriber" pkg="talker" type="subscriber.py" output="screen"/>
+    
+    <!-- launch parameters -->
+    <rosparam command="load" file="$(find talker)/config/parameters.yaml"/>
+    
+
+</launch>
