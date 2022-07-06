@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Launching nodes -->
+    <node name="subscriber" pkg="robot_controller_ros" type="robot_controller_subscriber.py" output="screen"/>
+    <node name="publisher" pkg="robot_controller_ros" type="robot_controller_publisher.py" output="screen"/>
+    
+    <!-- launch parameters -->
+    <rosparam command="load" file="$(find robot_controller_ros)/config/param.yaml"/>
+    
+
+</launch>

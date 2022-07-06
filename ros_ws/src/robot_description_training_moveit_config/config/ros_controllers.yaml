@@ -1,0 +1,36 @@
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+
+position_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - base_link1
+    - link1_link2
+    - link2_link3
+    - link3_link4
+    - link4_link5
+    - link5_link6
+gazebo_ros_control:
+  pid_gains:
+    base_link1: {p: 100, i: 0.1, d: 10}
+    link1_link2: {p: 100, i: 0.1, d: 10}
+    link2_link3: {p: 100, i: 0.1, d: 10 }
+    link3_link4: {p: 100, i: 0.1, d: 10 }
+    link4_link5: {p: 100, i: 0.1, d: 10 }
+    link5_link6: {p: 100, i: 0.1, d: 10 }
+
+controller_list:
+  - name: position_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - base_link1
+      - link1_link2
+      - link2_link3
+      - link3_link4
+      - link4_link5
+      - link5_link6
+    allowed_excution_duration_scaling: 1.2
+    allowed_goal_duration_margin: 0.5

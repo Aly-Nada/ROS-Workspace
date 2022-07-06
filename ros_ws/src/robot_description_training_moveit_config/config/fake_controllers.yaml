@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_tool_0_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - base_link1
+      - link1_link2
+      - link2_link3
+      - link3_link4
+      - link4_link5
+      - link5_link6
+initial:  # Define initial robot poses per group
+  - group: tool_0
+    pose: initial_pose
